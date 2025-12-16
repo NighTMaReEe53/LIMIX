@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { AiOutlineProduct } from "react-icons/ai";
 import { CiPhone, CiUser } from "react-icons/ci";
 import { GrBlog } from "react-icons/gr";
@@ -9,6 +10,10 @@ interface IShow {
 }
 
 const Nav_Links = ({ show }: IShow) => {
+  const [active, setActive] = useState<
+    "home" | "about" | "contact" | "blog" | "product"
+  >("home");
+
   return (
     <ul
       onClick={(e) => e.stopPropagation()}
@@ -18,10 +23,14 @@ const Nav_Links = ({ show }: IShow) => {
     >
       <li>
         <Link
+          onClick={() => setActive("home")}
           to={"/"}
-          className=" text-[35px]  lg:text-[17px] relative  font-medium flex items-center gap-1 
+          className={` text-[35px]  lg:text-[17px] relative  font-medium flex items-center gap-1 
           before:w-1.75 before:h-1.75 
-          before:-right-3.5 before:absolute before:hidden lg:before:block before:rounded-full before:bg-linear-to-r before:from-sky-500 before:via-blue-500 before:to-blue-600"
+          before:-right-3.5 before:absolute before:hidden
+           lg:before:block before:rounded-full before:bg-linear-to-r before:from-sky-500 before:via-blue-500 before:to-blue-600 ${
+             active == "home" ? "opacity-100" : "opacity-50"
+           }`}
         >
           <IoHomeOutline />
           Home
@@ -29,10 +38,14 @@ const Nav_Links = ({ show }: IShow) => {
       </li>
       <li>
         <Link
-          to={"/"}
-          className=" text-[35px]  lg:text-[17px] relative  font-medium flex items-center gap-1 
-          before:w-1.75 before:h-1.75 opacity-50  before:hidden lg:before:block
-          before:-right-3.5 before:absolute before:rounded-full before:bg-linear-to-r before:from-sky-500 before:via-blue-500 before:to-blue-600"
+          onClick={() => setActive("about")}
+          to={"/about"}
+          className={`text-[35px]  lg:text-[17px] relative  font-medium flex items-center gap-1 
+          before:w-1.75 before:h-1.75 ${
+            active == "about" ? "opacity-100" : "opacity-50"
+          }  before:hidden lg:before:block
+          before:-right-3.5 before:absolute
+           before:rounded-full before:bg-linear-to-r before:from-sky-500 before:via-blue-500 before:to-blue-600`}
         >
           <CiUser />
           About
@@ -40,10 +53,14 @@ const Nav_Links = ({ show }: IShow) => {
       </li>
       <li>
         <Link
+          onClick={() => setActive("product")}
           to={"/"}
-          className=" text-[35px]  lg:text-[17px] relative  font-medium flex items-center gap-1 
-          before:w-1.75 before:h-1.75 opacity-50 before:hidden lg:before:block
-          before:-right-3.5 before:absolute before:rounded-full before:bg-linear-to-r before:from-sky-500 before:via-blue-500 before:to-blue-600"
+          className={` text-[35px]  lg:text-[17px] relative  font-medium flex items-center gap-1 
+          before:w-1.75 before:h-1.75 ${
+            active == "product" ? "opacity-100" : "opacity-50"
+          } before:hidden lg:before:block
+          before:-right-3.5 before:absolute before:rounded-full before:bg-linear-to-r
+           before:from-sky-500 before:via-blue-500 before:to-blue-600`}
         >
           <AiOutlineProduct />
           Product
@@ -52,9 +69,13 @@ const Nav_Links = ({ show }: IShow) => {
       <li>
         <Link
           to={"/"}
-          className=" text-[35px]  lg:text-[17px] relative  font-medium flex items-center gap-1 
-          before:w-1.75 before:h-1.75 opacity-50 before:hidden lg:before:block
-          before:-right-3.5 before:absolute before:rounded-full before:bg-linear-to-r before:from-sky-500 before:via-blue-500 before:to-blue-600"
+          onClick={() => setActive("blog")}
+          className={` text-[35px]  lg:text-[17px] relative  font-medium flex items-center gap-1 
+          before:w-1.75 before:h-1.75 before:hidden lg:before:block
+          before:-right-3.5 before:absolute before:rounded-full 
+          before:bg-linear-to-r before:from-sky-500 before:via-blue-500 before:to-blue-600 ${
+            active == "blog" ? "opacity-100" : "opacity-50"
+          }`}
         >
           <GrBlog />
           Blog
@@ -62,8 +83,11 @@ const Nav_Links = ({ show }: IShow) => {
       </li>
       <li>
         <Link
+          onClick={() => setActive("contact")}
           to={"/"}
-          className=" text-[35px]  lg:text-[17px] font-medium flex items-center gap-1 opacity-50"
+          className={` text-[35px]  lg:text-[17px] font-medium flex items-center gap-1 ${
+            active == "contact" ? "opacity-100" : "opacity-50"
+          }`}
         >
           <CiPhone />
           Contact

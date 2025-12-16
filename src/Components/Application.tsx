@@ -14,11 +14,6 @@ const Application = () => {
         className="absolute top-0 right-0 w-40 h-40 opacity-45"
       />
       <img
-        src="4.png"
-        className="w-62.5 absolute top-0 right-30 pointer-events-none opacity-10 -z-30"
-        alt=""
-      />
-      <img
         src="Fishs.png"
         className="w-62.5 absolute bottom-0 right-0 pointer-events-none opacity-10 -z-20"
         alt=""
@@ -120,7 +115,7 @@ const Application = () => {
       <motion.div
         initial={{ opacity: 0, x: -10 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{duration: 1}}
+        transition={{ duration: 1 }}
         className="diagram  pt-14"
       >
         <img src="diagram.png" alt="" />
