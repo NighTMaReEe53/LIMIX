@@ -6,6 +6,7 @@ import {
 import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Layout from "./Layout";
+import Contact from "../Pages/Contact";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -13,6 +14,7 @@ export const router = createBrowserRouter(
       <Route path="/" element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
       </Route>
     </>
   )

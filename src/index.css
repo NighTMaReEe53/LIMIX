@@ -105,6 +105,24 @@ footer {
   }
 }
 
+.btn-hover {
+  &:hover {
+    opacity: 0.7
+  }
+  &:active {
+    scale: 0.95
+  }
+}
+
+.social-icons {
+  .icon {
+    &:hover {
+      opacity: 1 !important;
+      transform: translateY(-5px) !important;
+    }
+  }
+}
+
 .image-shadow {
   transition: 0.3s ease;
   overflow: hidden;

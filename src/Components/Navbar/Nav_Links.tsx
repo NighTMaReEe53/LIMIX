@@ -84,7 +84,7 @@ const Nav_Links = ({ show }: IShow) => {
       <li>
         <Link
           onClick={() => setActive("contact")}
-          to={"/"}
+          to={"/contact"}
           className={` text-[35px]  lg:text-[17px] font-medium flex items-center gap-1 ${
             active == "contact" ? "opacity-100" : "opacity-50"
           }`}

@@ -65,7 +65,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to={"/"}
+                  to={"/about"}
                   className="flex items-center gap-2 text-[#f1f5f9]"
                 >
                   <CiUser size={20} className="text-blue-500" />
@@ -95,7 +95,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to={"/"}
+                  to={"/contact"}
                   className="flex items-center gap-2 text-[#f1f5f9]"
                 >
                   <CiPhone size={20} className="text-blue-500" />

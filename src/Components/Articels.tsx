@@ -57,7 +57,7 @@ const Articels = () => {
             transition={{ delay: 0.2 }}
             className="box box-hover bg-(--boxLinear) p-3 shadow-(--shadow) border-(--borderColor) border-2 rounded-md"
           >
-            <div className="before:absolute before:top-0 before:left-0 relative before:w-full before:h-full before:bg-[#0008] before:transition-all">
+            <div className="before:absolute before:top-0 before:left-0 relative before:w-full before:rounded-md before:h-full before:bg-[#0008] before:transition-all">
               <img
                 src="blog-2.webp"
                 className="object-cover rounded-md mb-3 h-50 w-full"
@@ -86,7 +86,7 @@ const Articels = () => {
             transition={{ delay: 0.4 }}
             className="box box-hover bg-(--boxLinear) p-3 shadow-(--shadow) border-(--borderColor) border-2 rounded-md"
           >
-            <div className="before:absolute before:top-0 before:left-0 relative before:w-full before:h-full before:bg-[#0008] before:transition-all">
+            <div className="before:absolute before:top-0 before:left-0 relative before:w-full before:h-full before:rounded-md before:bg-[#0008] before:transition-all">
               <img
                 src="blog-3.webp"
                 className="object-cover rounded-md mb-3 h-50 w-full"
@@ -115,7 +115,7 @@ const Articels = () => {
             transition={{ delay: 0.6 }}
             className="box box-hover bg-(--boxLinear) p-3 shadow-(--shadow) border-(--borderColor) border-2 rounded-md"
           >
-            <div className="before:absolute before:top-0 before:left-0 relative before:w-full before:h-full before:bg-[#0008] before:transition-all">
+            <div className="before:absolute before:top-0 before:left-0 relative before:w-full before:rounded-md before:h-full before:bg-[#0008] before:transition-all">
               <img
                 src="blog-4.webp"
                 className="object-cover rounded-md mb-3 h-50 w-full"
@@ -144,7 +144,7 @@ const Articels = () => {
             transition={{ delay: 0.8 }}
             className="box box-hover bg-(--boxLinear) p-3 shadow-(--shadow) border-(--borderColor) border-2 rounded-md"
           >
-            <div className="before:absolute before:top-0 before:left-0 relative before:w-full before:h-full before:bg-[#0008] before:transition-all">
+            <div className="before:absolute before:top-0 before:left-0 relative before:rounded-md before:w-full before:h-full before:bg-[#0008] before:transition-all">
               <img
                 src="blog-5.webp"
                 className="object-cover rounded-md mb-3 h-50 w-full"
@@ -173,7 +173,7 @@ const Articels = () => {
             transition={{ delay: 1 }}
             className="box box-hover bg-(--boxLinear) p-3 shadow-(--shadow) border-(--borderColor) border-2 rounded-md"
           >
-            <div className="before:absolute before:top-0 before:left-0 relative before:w-full before:h-full before:bg-[#0008] before:transition-all">
+            <div className="before:absolute before:top-0 before:left-0 relative before:rounded-md before:w-full before:h-full before:bg-[#0008] before:transition-all">
               <img
                 src="blog-6.webp"
                 className="object-cover rounded-md mb-3 h-50 w-full"

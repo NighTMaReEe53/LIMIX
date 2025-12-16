@@ -27,7 +27,7 @@ const Dots = () => {
           Blog
         </span>
       </Link>
-      <Link to={"/"} className=" flex  items-center">
+      <Link to={"/contact"} className=" flex  items-center">
         <span className="w-3 h-3 border-2 absolute rounded-full border-orange-500"></span>
         <span className="second-span transition-opacity left-3.5 absolute text-xs w-14 py-1 text-center rounded-sm text-white font-bold opacity-0 pointer-events-none bg-orange-500">
           Contact
