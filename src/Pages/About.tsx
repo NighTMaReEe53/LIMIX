@@ -1,12 +1,7 @@
 import { RiRobot2Line } from "react-icons/ri";
 import { motion } from "motion/react";
 import { AiOutlinePython } from "react-icons/ai";
-import {
-  FaBullseye,
-  FaChartBar,
-  FaEye,
-  FaThinkPeaks,
-} from "react-icons/fa6";
+import { FaBullseye, FaChartBar, FaEye, FaThinkPeaks } from "react-icons/fa6";
 import Lottie from "lottie-react";
 import about from "../../public/json/about.json";
 import MainTitle from "../Components/Tittle/MainTitle";
@@ -15,6 +10,7 @@ import { BiWorld } from "react-icons/bi";
 import { FiAward, FiUsers } from "react-icons/fi";
 import Bubbles from "../../public/json/Bubbles.json";
 import { IoIosArrowDropdown } from "react-icons/io";
+import Water from "../../public/json/water.json";
 
 const About = () => {
   return (
@@ -152,7 +148,7 @@ const About = () => {
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.2 }}
-                  className="text-(--TextColor) capitalize list-inside text-[14px]"
+                  className="text-(--TextColor) capitalize list-inside text-[14px] text-center lg:text-start"
                 >
                   Limix Aquaculture was founded with a vision to address the
                   growing challenges in the aquaculture industry. As global
@@ -164,7 +160,7 @@ const About = () => {
                   initial={{ opacity: 0, y: -10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="text-(--TextColor) capitalize list-inside text-[14px]"
+                  className="text-(--TextColor) capitalize list-inside text-[14px] text-center lg:text-start"
                 >
                   Our platform combines cutting-edge artificial intelligence,
                   IoT sensor networks, and automation technology to create a
@@ -175,7 +171,7 @@ const About = () => {
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
-                  className="text-(--TextColor) capitalize list-inside text-[14px]"
+                  className="text-(--TextColor) capitalize list-inside text-[14px] text-center lg:text-start"
                 >
                   From small-scale aquariums to large commercial fish farms,
                   Limix provides real-time monitoring, predictive analytics, and
@@ -240,16 +236,16 @@ const About = () => {
                 initial={{ y: -10, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.2 }}
-                className="box shadow-(--shadow) p-3 border-(--borderColor) border-2 rounded-md box-hover"
+                className="box shadow-(--shadow) p-3  rounded-md box-hover bg-linear-to-r from-rose-400 via-rose-500 to-rose-600"
               >
-                <div className="icon w-15 h-15 bg-linear-to-r  from-rose-400 via-rose-500 to-rose-600 mb-2 flex items-center justify-center text-[#f1f5f9] rounded-md">
+                <div className="icon w-15 h-15  border-2 border-stone-300 mb-2 flex items-center justify-center text-stone-300 rounded-md">
                   <BiWorld size={35} />
                 </div>
                 <div className="text">
-                  <h2 className="font-bold text-xl mb-2 text-transparent animate-gradient bg-clip-text bg-linear-to-r from-black via-rose-600 to-black">
+                  <h2 className="font-bold text-xl mb-2 text-transparent animate-gradient bg-clip-text bg-linear-to-r from-black via-white to-black">
                     Sustainability
                   </h2>
-                  <p className="text-(--TextColor)">
+                  <p className="text-white">
                     Committed to eco-friendly practices that protect our oceans
                     and environment
                   </p>
@@ -278,16 +274,16 @@ const About = () => {
                 initial={{ x: -10, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.6 }}
-                className="box shadow-(--shadow) p-3 border-(--borderColor) border-2 rounded-md box-hover"
+                className="box shadow-(--shadow) p-3 bg-linear-to-r from-orange-400 via-orange-500 to-orange-600 rounded-md"
               >
-                <div className="icon w-15 h-15 bg-linear-to-r  from-orange-400 via-orange-500 to-orange-600 mb-2 flex items-center justify-center text-[#f1f5f9] rounded-md">
+                <div className="icon w-15 h-15 bg-linear-to-r  mb-2 flex items-center justify-center text-stone-300 border-2 border-stone-300 rounded-md">
                   <FiAward size={35} />
                 </div>
                 <div className="text">
-                  <h2 className="font-bold text-xl mb-2 text-transparent animate-gradient bg-clip-text bg-linear-to-r from-black via-orange-600 to-black">
+                  <h2 className="font-bold text-xl mb-2 text-transparent animate-gradient bg-clip-text bg-linear-to-r from-black via-white to-black">
                     Excellence
                   </h2>
-                  <p className="text-(--TextColor)">
+                  <p className="text-white">
                     Delivering world-class products and support that exceed
                     expectations
                   </p>
@@ -316,22 +312,49 @@ const About = () => {
                 initial={{ x: 10, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ delay: 1 }}
-                className="box shadow-(--shadow) p-3 border-(--borderColor) border-2 rounded-md box-hover"
+                className="box shadow-(--shadow) p-3 bg-linear-to-r from-cyan-400 via-cyan-500 to-cyan-500 rounded-md "
               >
-                <div className="icon w-15 h-15 bg-linear-to-r  from-cyan-400 via-cyan-500 to-cyan-600 mb-2 flex items-center justify-center text-[#f1f5f9] rounded-md">
+                <div className="icon w-15 h-15 bg-linear-to-r  border-2 border-stone-300 mb-2 flex items-center justify-center text-stone-300 rounded-md">
                   <FaBullseye size={35} />
                 </div>
                 <div className="text">
-                  <h2 className="font-bold text-xl mb-2 text-transparent animate-gradient bg-clip-text bg-linear-to-r from-black via-cyan-600 to-black">
+                  <h2 className="font-bold text-xl mb-2 text-transparent animate-gradient bg-clip-text bg-linear-to-r from-black via-white to-black">
                     Precision
                   </h2>
-                  <p className="text-(--TextColor)">
+                  <p className="text-white">
                     Using data and analytics to drive accurate, informed
                     decision-making
                   </p>
                 </div>
               </motion.div>
             </div>
+          </div>
+          <div className="team py-14 relative">
+            <Lottie
+              animationData={Water}
+              className="absolute top-0 right-0 w-50 h-50 opacity-45 -z-20"
+            />
+            <Lottie
+              animationData={Water}
+              className="absolute bottom-0 left-0 w-40 h-40 opacity-30 -z-20"
+            />
+            <MainTitle
+              text="Our Team"
+              mainText="Meet Our Team"
+              paraText="Experts in aquaculture, AI, and sustainable technology"
+            />
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              className="image  lg:w-187.5 lg:h-120 shadow-(--shadow) p-3 border-(--borderColor) border-2 rounded-md box-hover mx-auto flex"
+            >
+              <img
+                src="team.jpg"
+                className="w-full object-cover h-full rounded-md"
+                alt=""
+              />
+            </motion.div>
           </div>
         </div>
       </section>
