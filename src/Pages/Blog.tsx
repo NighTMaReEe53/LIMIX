@@ -114,7 +114,7 @@ const Blog = () => {
             transition={{ duration: 1 }}
             className="relative"
           >
-            <span className="absolute blur-sm top-[50%] translate-y-[-50%] bg-blue-500 left-[50%] translate-x-[-50%] w-85 h-85 rounded-full "></span>
+            <span className="absolute blur-sm top-[50%] translate-y-[-50%] bg-linear-to-r from-blue-400 via-blue-500 to-blue-600 left-[50%] translate-x-[-50%] w-85 h-85 rounded-full "></span>
             <Lottie animationData={Read} className="w-full h-100" />
           </motion.div>
 
