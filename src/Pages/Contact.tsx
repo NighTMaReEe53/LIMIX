@@ -11,6 +11,7 @@ import {
 import { MdAlternateEmail } from "react-icons/md";
 import { BsFillSendFill } from "react-icons/bs";
 import Bubbles from "../../public/json/Bubbles.json";
+import Water from "../../public/json/water.json";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { motion } from "motion/react";
 
@@ -20,11 +21,15 @@ const Contact = () => {
       <div className="absolute w-50 h-50 rounded-full top-0 right-0 bg-blue-500 blur-[300px] -z-20"></div>
       <Lottie
         animationData={Bubbles}
-        className="absolute top-0 right-0 w-40 h-40 opacity-45"
+        className="absolute top-0 right-0 w-40 h-40 opacity-45 -z-30"
       />
       <Lottie
         animationData={Bubbles}
-        className="absolute top-0 left-0 w-40 h-40 opacity-45"
+        className="absolute top-0 left-0 w-40 h-40 opacity-45 -z-30"
+      />
+      <Lottie
+        animationData={Water}
+        className="absolute bottom-0 left-0 w-40 h-40 opacity-45 -z-30"
       />
 
       <div className="container relative mx-auto px-3 lg:px-30">
