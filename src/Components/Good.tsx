@@ -35,11 +35,11 @@ const Good = () => {
             whileInView={{ x: 0, opacity: 1 }}
             className="box shadow-(--shadow) p-3 border-(--borderColor) border-2 rounded-md box-hover"
           >
-            <div className="icon w-15 h-15 bg-linear-to-r from-blue-400 via-blue-500 to-blue-600 mb-2 flex items-center justify-center text-[#f1f5f9] rounded-md">
+            <div className="icon w-15 h-15 bg-linear-to-r  from-blue-400 via-blue-500 to-blue-600 mb-2 flex items-center justify-center text-[#f1f5f9] rounded-md">
               <LuBrain size={35} />
             </div>
             <div className="text">
-              <h2 className="font-bold text-xl mb-2 text-transparent bg-clip-text bg-linear-to-r from-black via-blue-600 to-black">
+              <h2 className="font-bold text-xl animate-gradient mb-2 text-transparent bg-clip-text bg-linear-to-r from-black via-blue-600 to-black">
                 AI-Powered Analytics
               </h2>
               <p className="text-(--TextColor)">
@@ -58,7 +58,7 @@ const Good = () => {
               <SiRainmeter size={35} />
             </div>
             <div className="text">
-              <h2 className="font-bold text-xl mb-2 text-transparent bg-clip-text bg-linear-to-r from-cyan-600 via-black to-black">
+              <h2 className="font-bold animate-gradient text-xl mb-2 text-transparent bg-clip-text bg-linear-to-r from-cyan-600 via-black to-black">
                 Real-Time Monitoring
               </h2>
               <p className="text-(--TextColor)">
@@ -77,7 +77,7 @@ const Good = () => {
               <FaTemperatureHalf size={35} />
             </div>
             <div className="text">
-              <h2 className="font-bold text-xl mb-2 text-transparent bg-clip-text bg-linear-to-r from-black via-purple-500 to-black">
+              <h2 className="font-bold animate-gradient text-xl mb-2 text-transparent bg-clip-text bg-linear-to-r from-black via-purple-500 to-black">
                 Temperature Control
               </h2>
               <p className="text-(--TextColor)">
@@ -96,7 +96,7 @@ const Good = () => {
               <MdOutlineHealthAndSafety size={35} />
             </div>
             <div className="text">
-              <h2 className="font-bold text-xl mb-2 text-transparent bg-clip-text bg-linear-to-r from-rose-500 via-black to-black">
+              <h2 className="font-bold animate-gradient text-xl mb-2 text-transparent bg-clip-text bg-linear-to-r from-rose-500 via-black to-black">
                 Health Diagnostics
               </h2>
               <p className="text-(--TextColor)">
@@ -109,13 +109,13 @@ const Good = () => {
             initial={{ y: -10, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8 }}
-            className="box box-hover shadow-(--shadow) p-3 border-(--borderColor) border-2 rounded-md"
+            className="box box-hover  shadow-(--shadow) p-3 border-(--borderColor) border-2 rounded-md"
           >
             <div className="icon w-15 h-15 bg-linear-to-r from-stone-400 via-stone-500 to-stone-600 mb-2 flex items-center justify-center text-[#f1f5f9] rounded-md">
               <IoFlashOutline size={35} />
             </div>
             <div className="text">
-              <h2 className="font-bold text-xl mb-2 text-transparent bg-clip-text bg-linear-to-r from-stone-500 via-black to-black">
+              <h2 className="font-bold animate-gradient text-xl mb-2 text-transparent bg-clip-text bg-linear-to-r from-stone-500 via-black to-black">
                 Automated Systems
               </h2>
               <p className="text-(--TextColor)">
@@ -134,7 +134,7 @@ const Good = () => {
               <AiOutlineSafety size={35} />
             </div>
             <div className="text">
-              <h2 className="font-bold text-xl mb-2 text-transparent bg-clip-text bg-linear-to-r from-indigo-500 via-black to-black">
+              <h2 className="font-bold animate-gradient text-xl mb-2 text-transparent bg-clip-text bg-linear-to-r from-indigo-500 via-black to-black">
                 Predictive Maintenance
               </h2>
               <p className="text-(--TextColor)">

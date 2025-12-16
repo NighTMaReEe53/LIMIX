@@ -28,9 +28,9 @@ const Nav_Links = ({ show }: IShow) => {
           className={` text-[35px]  lg:text-[17px] relative  font-medium flex items-center gap-1 
           before:w-1.75 before:h-1.75 
           before:-right-3.5 before:absolute before:hidden
-           lg:before:block before:rounded-full before:bg-linear-to-r before:from-sky-500 before:via-blue-500 before:to-blue-600 ${
-             active == "home" ? "opacity-100" : "opacity-50"
-           }`}
+          lg:before:block before:rounded-full before:bg-linear-to-r before:from-sky-500 before:via-blue-500 before:to-blue-600 ${
+            active == "home" ? "opacity-100" : "opacity-50"
+          }`}
         >
           <IoHomeOutline />
           Home
