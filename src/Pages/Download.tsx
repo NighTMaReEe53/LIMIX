@@ -66,22 +66,24 @@ const Download = () => {
                   Download For
                   <IoIosArrowForward size={20} color="#333" />
                 </motion.h2>
-                <motion.div
+                <motion.button
                   initial={{ opacity: 0, x: -5 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  whileInView={{ opacity: 0.5, x: 0 }}
                   transition={{ delay: 0.2 }}
-                  className="icon w-12 h-12 bg-linear-to-r from-indigo-400 via-indigo-500 to-indigo-600 rounded-md flex items-center justify-center text-white"
+                  title="Download For Android"
+                  className="icon w-12 h-12 cursor-pointer opacity-50 bg-linear-to-r mobile-icon transition from-indigo-400 via-indigo-500 to-indigo-600 rounded-md flex items-center justify-center text-white"
                 >
                   <IoLogoAndroid size={25} />
-                </motion.div>
-                <motion.div
+                </motion.button>
+                <motion.button
                   initial={{ opacity: 0, y: -5 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  whileInView={{ opacity: 0.5, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="icon w-12 h-12 bg-linear-to-r from-rose-400 via-rose-500 to-rose-600 rounded-md flex items-center justify-center text-white"
+                  title="Download For IOS"
+                  className="icon w-12 h-12 cursor-pointer opacity-50 mobile-icon transition bg-linear-to-r from-rose-400 via-rose-500 to-rose-600 rounded-md flex items-center justify-center text-white"
                 >
                   <FaAppStoreIos size={25} />
-                </motion.div>
+                </motion.button>
               </div>
             </div>
             <motion.div
