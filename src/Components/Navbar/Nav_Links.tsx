@@ -3,6 +3,7 @@ import { AiOutlineProduct } from "react-icons/ai";
 import { CiPhone, CiUser } from "react-icons/ci";
 import { GrBlog } from "react-icons/gr";
 import { IoHomeOutline } from "react-icons/io5";
+import { MdOutlineDownload } from "react-icons/md";
 import { Link } from "react-router";
 
 interface IShow {
@@ -11,7 +12,7 @@ interface IShow {
 
 const Nav_Links = ({ show }: IShow) => {
   const [active, setActive] = useState<
-    "home" | "about" | "contact" | "blog" | "product"
+    "home" | "about" | "contact" | "blog" | "product" | "download"
   >("home");
 
   return (
@@ -79,6 +80,21 @@ const Nav_Links = ({ show }: IShow) => {
         >
           <GrBlog />
           Blog
+        </Link>
+      </li>
+      <li>
+        <Link
+          to={"/download"}
+          onClick={() => setActive("download")}
+          className={` text-[35px]  lg:text-[17px] relative  font-medium flex items-center gap-1 
+          before:w-1.75 before:h-1.75 before:hidden lg:before:block
+          before:-right-3.5 before:absolute before:rounded-full 
+          before:bg-linear-to-r before:from-sky-500 before:via-blue-500 before:to-blue-600 ${
+            active == "download" ? "opacity-100" : "opacity-50"
+          }`}
+        >
+          <MdOutlineDownload  />
+          Download
         </Link>
       </li>
       <li>

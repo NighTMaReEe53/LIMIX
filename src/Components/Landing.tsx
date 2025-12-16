@@ -6,6 +6,7 @@ import Lottie from "lottie-react";
 import { IoIosArrowDropdown } from "react-icons/io";
 
 import { motion } from "motion/react";
+import { Link } from "react-router";
 
 const Landing = () => {
   return (
@@ -40,14 +41,13 @@ const Landing = () => {
               Transform Your Fish Farm with Smart Aquaculture Technology
             </motion.p>
             <div className="btns flex items-center justify-center lg:justify-start gap-1 mb-2">
-              <motion.button
-                initial={{ opacity: 0, x: 10 }}
-                whileInView={{ opacity: 1, x: 0 }}
+              <Link
+                to={"/download"}
                 className="flex items-center gap-1 text-[15px] text-[#f2f2f2] cursor-pointer rounded-md p-2  main-btn"
               >
                 <MdDownload size={20} />
                 Download
-              </motion.button>
+              </Link>
               <motion.a
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}

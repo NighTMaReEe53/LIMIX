@@ -8,6 +8,7 @@ import About from "../Pages/About";
 import Layout from "./Layout";
 import Contact from "../Pages/Contact";
 import Blog from "../Pages/Blog";
+import Download from "../Pages/Download";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ export const router = createBrowserRouter(
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="blog" element={<Blog />} />
+        <Route path="download" element={<Download />} />
       </Route>
     </>
   )
