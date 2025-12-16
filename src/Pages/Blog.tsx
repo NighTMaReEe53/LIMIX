@@ -199,7 +199,7 @@ const Blog = () => {
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: 1 }}
-                  className="font-medium capitalize text-[11px] md:text-[15px] text-transparent bg-clip-text bg-linear-to-r from-black via-indigo-500 to-black"
+                  className="font-medium capitalize text-[13px] md:text-[15px] text-transparent bg-clip-text bg-linear-to-r from-black via-indigo-500 to-black"
                 >
                   Stay connected with LIMIX, and explore how artificial
                   intelligence is transforming the way we care for fish—one
