@@ -5,6 +5,7 @@ import { FaRegEye } from "react-icons/fa6";
 import Lottie from "lottie-react";
 import Bubbles from "../../public/json/Bubbles.json";
 import { motion } from "motion/react";
+import { Link } from "react-router";
 
 const Application = () => {
   return (
@@ -91,23 +92,20 @@ const Application = () => {
             </motion.li>
 
             <div className="btns flex flex-col md:flex-row  items-center justify-center lg:justify-start gap-1 mb-2">
-              <motion.button
-                initial={{ opacity: 0, y: -10 }}
-                whileInView={{ opacity: 1, y: 0 }}
+              <Link
+                to={"/download"}
                 className="flex items-center gap-1 text-[15px] w-full justify-center text-[#f2f2f2] cursor-pointer rounded-md p-2  main-btn"
               >
                 <MdDownload size={20} />
                 Download Application
-              </motion.button>
-              <motion.button
-                initial={{ opacity: 0, x: -10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.4 }}
+              </Link>
+              <Link
+                to={"/download"}
                 className=" flex items-center gap-1 text-[15px] w-full justify-center  cursor-pointer rounded-md p-2 secondary-btn"
               >
                 <FaRegEye size={18} />
                 Explore Application
-              </motion.button>
+              </Link>
             </div>
           </div>
         </div>

@@ -10,6 +10,7 @@ import { RiRobot3Fill } from "react-icons/ri";
 import Bubbles from "../../public/json/Bubbles.json";
 import DownloadAnaimation from "../../public/json/Download.json";
 import { CiBookmarkCheck } from "react-icons/ci";
+import Good from "../Components/Good";
 
 const Download = () => {
   return (
@@ -232,7 +233,7 @@ const Download = () => {
             <motion.h2
               initial={{ opacity: 0, x: -10 }}
               whileInView={{ opacity: 1, x: 0 }}
-              className="font-bold  text-[20px] animate-gradient text-center animate-gradient lg:text-start md:text-3xl text-transparent bg-clip-text from-black via-rose-500 to-black bg-linear-to-r mb-3"
+              className="font-bold  text-[20px] animate-gradient text-center animate-gradient lg:text-start md:text-3xl text-transparent bg-clip-text from-black via-cyan-500 to-black bg-linear-to-r mb-3"
             >
               Built With Ai Designed For Real Farm's
             </motion.h2>
@@ -254,7 +255,7 @@ const Download = () => {
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="font-medium capitalize text-[13px] md:text-[16px] animate-gradient text-transparent bg-clip-text bg-linear-to-r from-indigo-500 via-black to-black"
+                  className="font-medium capitalize text-lg animate-gradient text-transparent bg-clip-text bg-linear-to-r from-indigo-500 via-black to-black"
                 >
                   1. Detect Abnormal Water Behavior
                 </motion.span>
@@ -265,7 +266,7 @@ const Download = () => {
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.6 }}
-                  className="font-medium capitalize text-[13px] md:text-[16px] text-transparent animate-gradient bg-clip-text bg-linear-to-r from-black via-black to-orange-500"
+                  className="font-medium capitalize text-lg text-transparent animate-gradient bg-clip-text bg-linear-to-r from-black via-black to-orange-500"
                 >
                   2. Predict Future Risks
                 </motion.span>
@@ -276,7 +277,7 @@ const Download = () => {
                   initial={{ opacity: 0, y: -10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.8 }}
-                  className="font-medium capitalize text-[13px] md:text-[16px] animate-gradient text-transparent bg-clip-text bg-linear-to-r from-rose-500 via-black to-cyan-500"
+                  className="font-medium capitalize text-lg animate-gradient text-transparent bg-clip-text bg-linear-to-r from-rose-500 via-black to-cyan-500"
                 >
                   3. Recommend Optimal Actions
                 </motion.span>
@@ -287,7 +288,7 @@ const Download = () => {
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: 1 }}
-                  className="font-medium capitalize text-[13px] md:text-[16px] animate-gradient text-transparent bg-clip-text bg-linear-to-r from-sky-500 via-sky-600 to-black"
+                  className="font-medium capitalize text-lg animate-gradient text-transparent bg-clip-text bg-linear-to-r from-sky-500 via-sky-600 to-black"
                 >
                   4. Improve Fedding Efficiency
                 </motion.span>
@@ -297,8 +298,8 @@ const Download = () => {
                 <motion.span
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 1 }}
-                  className="font-medium capitalize text-[13px] md:text-[16px] text-transparent animate-gradient bg-clip-text bg-linear-to-r from-black via-violet-500 to-black"
+                  transition={{ delay: 1.2 }}
+                  className="font-medium capitalize text-lg text-transparent animate-gradient bg-clip-text bg-linear-to-r from-black via-violet-500 to-black"
                 >
                   5. Reduce Fish Mortality
                 </motion.span>
@@ -308,8 +309,8 @@ const Download = () => {
                 <motion.span
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 1 }}
-                  className="font-medium capitalize flex items-center gap-1 text-[13px] md:text-[16px] animate-gradient text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-blue-600 to-black"
+                  transition={{ delay: 1.4 }}
+                  className="font-medium capitalize flex items-center gap-1 text-[15px] md:text-lg animate-gradient text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-blue-600 to-black"
                 >
                   6. From Raw Sensor Data{" "}
                   <IoIosArrowForward size={15} color="#000" /> To Smart
@@ -327,6 +328,7 @@ const Download = () => {
           </motion.div>
         </div>
       </div>
+      <Good />
     </section>
   );
 };
