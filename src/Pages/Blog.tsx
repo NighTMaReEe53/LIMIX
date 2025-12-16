@@ -132,7 +132,7 @@ const Blog = () => {
             <motion.h2
               initial={{ opacity: 0, x: -10 }}
               whileInView={{ opacity: 1, x: 0 }}
-              className="font-bold  text-2xl text-center lg:text-start md:text-4xl text-transparent bg-clip-text from-black via-rose-500 to-black bg-linear-to-r mb-3"
+              className="font-bold  text-2xl animate-gradient text-center lg:text-start md:text-4xl text-transparent bg-clip-text from-black via-rose-500 to-black bg-linear-to-r mb-3"
             >
               What You’ll Find on Our Blog
             </motion.h2>
@@ -191,6 +191,19 @@ const Blog = () => {
                   className="font-medium capitalize text-[13px] md:text-[16px] text-transparent bg-clip-text bg-linear-to-r from-sky-500 via-sky-600 to-black"
                 >
                   Best practices for beginners and professional aquarists alike{" "}
+                </motion.span>
+              </li>
+              <li className="flex gap-1 items-center">
+                <CiBookmarkCheck size={50} className="text-teal-600" />
+                <motion.span
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 1 }}
+                  className="font-medium capitalize text-[13px] md:text-[15px] text-transparent bg-clip-text bg-linear-to-r from-black via-indigo-500 to-black"
+                >
+                  Stay connected with LIMIX, and explore how artificial
+                  intelligence is transforming the way we care for fish—one
+                  smart tank at a time.
                 </motion.span>
               </li>
             </ul>
