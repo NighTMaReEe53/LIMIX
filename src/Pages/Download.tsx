@@ -90,7 +90,7 @@ const Download = () => {
             >
               <Lottie
                 animationData={Animation}
-                className="w-full h-80 md:h-auto"
+                className="w-full h-80 lg:h-auto"
               />
             </motion.div>
           </div>
@@ -112,7 +112,10 @@ const Download = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <Lottie animationData={Animation2} />
+            <Lottie
+              animationData={Animation2}
+              className="w-full h-80 lg:h-auto"
+            />
           </motion.div>
           <div className="text">
             <motion.p
