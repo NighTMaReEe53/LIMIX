@@ -28,6 +28,16 @@ const Contact = () => {
       />
 
       <div className="container relative mx-auto px-3 lg:px-30">
+        <motion.p
+          initial={{ y: -10, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          className="pill mb-3 w-fit mx-auto md:mx-0 rounded-full flex items-center gap-1 p-2 lg:hidden"
+        >
+          <span className="w-1.5 h-1.5 block rounded-full dot"></span>
+          <span className="text-[13px]  relative font-bold bg-linear-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent ">
+            Contact Us
+          </span>
+        </motion.p>
         <div className="content grid grid-cols-1 lg:grid-cols-3 gap-3 items-center">
           <motion.div
             initial={{ opacity: 0, x: -10 }}
