@@ -27,7 +27,7 @@ const Layout = () => {
   return (
     <>
       <div
-        className={`loader fixed top-0 left-0 w-full h-full z-99999 bg-black ${
+        className={`loader fixed top-0 left-0 w-full h-full transition-opacity z-99999 bg-black ${
           active ? "opacity-100 pointer-events-none" : "opacity-0 pointer-events-none"
         }`}
       >
