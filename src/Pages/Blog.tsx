@@ -194,16 +194,15 @@ const Blog = () => {
                 </motion.span>
               </li>
               <li className="flex gap-1 items-center">
-                <CiBookmarkCheck size={50} className="text-teal-600" />
+                <CiBookmarkCheck className="text-teal-600 text-[40px]" />
                 <motion.span
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: 1 }}
-                  className="font-medium capitalize text-[13px] md:text-[15px] text-transparent bg-clip-text bg-linear-to-r from-black via-indigo-500 to-black"
+                  className="font-medium capitalize text-[11px] md:text-[15px] text-transparent bg-clip-text bg-linear-to-r from-black via-indigo-500 to-black"
                 >
                   Stay connected with LIMIX, and explore how artificial
                   intelligence is transforming the way we care for fish—one
-                  smart tank at a time.
                 </motion.span>
               </li>
             </ul>
