@@ -36,7 +36,7 @@ const Articels = () => {
               />
             </div>
             <div className="text">
-              <h2 className="font-bold text-[15px] mb-2 text-transparent bg-clip-text bg-linear-to-r from-black via-indigo-500 to-black">
+              <h2 className="font-bold text-[15px] animate-gradient mb-2 text-transparent bg-clip-text bg-linear-to-r from-black via-indigo-500 to-black">
                 Smart Water Monitoring in Modern Fish Farms
               </h2>
               <p className="text-(--TextColor)">
@@ -65,7 +65,7 @@ const Articels = () => {
               />
             </div>
             <div className="text">
-              <h2 className="font-bold text-[15px] mb-2 text-transparent bg-clip-text bg-linear-to-r from-orange-500 via-black to-black">
+              <h2 className="font-bold animate-gradient text-[15px] mb-2 text-transparent bg-clip-text bg-linear-to-r from-orange-500 via-black to-black">
                 Smart Water Monitoring in Modern Fish Farms
               </h2>
               <p className="text-(--TextColor)">
@@ -94,7 +94,7 @@ const Articels = () => {
               />
             </div>
             <div className="text">
-              <h2 className="font-bold text-[15px] mb-2 text-transparent bg-clip-text bg-linear-to-r from-black via-black to-purple-500">
+              <h2 className="font-bold animate-gradient text-[15px] mb-2 text-transparent bg-clip-text bg-linear-to-r from-black via-black to-purple-500">
                 Smart Water Monitoring in Modern Fish Farms
               </h2>
               <p className="text-(--TextColor)">
@@ -123,7 +123,7 @@ const Articels = () => {
               />
             </div>
             <div className="text">
-              <h2 className="font-bold text-[15px] mb-2 text-transparent bg-clip-text bg-linear-to-r from-black via-cyan-500 to-black">
+              <h2 className="font-bold animate-gradient text-[15px] mb-2 text-transparent bg-clip-text bg-linear-to-r from-black via-cyan-500 to-black">
                 Smart Water Monitoring in Modern Fish Farms
               </h2>
               <p className="text-(--TextColor)">
@@ -152,7 +152,7 @@ const Articels = () => {
               />
             </div>
             <div className="text">
-              <h2 className="font-bold text-[15px] mb-2 text-transparent bg-clip-text bg-linear-to-r from-rose-500 via-black to-black">
+              <h2 className="font-bold animate-gradient text-[15px] mb-2 text-transparent bg-clip-text bg-linear-to-r from-rose-500 via-black to-black">
                 Smart Water Monitoring in Modern Fish Farms
               </h2>
               <p className="text-(--TextColor)">
@@ -181,7 +181,7 @@ const Articels = () => {
               />
             </div>
             <div className="text">
-              <h2 className="font-bold text-[15px] mb-2 text-transparent bg-clip-text bg-linear-to-r from-black via-black to-teal-500">
+              <h2 className="font-bold animate-gradient text-[15px] mb-2 text-transparent bg-clip-text bg-linear-to-r from-black via-black to-teal-500">
                 Smart Water Monitoring in Modern Fish Farms
               </h2>
               <p className="text-(--TextColor)">
