@@ -114,7 +114,7 @@ const Contact = () => {
               <textarea
                 placeholder="Your Message To LIMIX"
                 className="p-2 shadow-(--shadow) outline-none border-(--borderColor) border-2 rounded-md resize-none 
-                h-25"
+                h-37.5"
               ></textarea>
               <motion.button
                 initial={{ opacity: 0, x: -10 }}

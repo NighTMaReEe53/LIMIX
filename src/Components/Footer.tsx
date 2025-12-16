@@ -85,7 +85,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to={"/"}
+                  to={"/blog"}
                   className="flex items-center gap-2 text-[#f1f5f9]"
                 >
                   <GrBlog size={20} className="text-blue-500" />

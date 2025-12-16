@@ -16,7 +16,7 @@ const MainTitle = ({ text, mainText, paraText, active = false }: IText) => {
         className="pill mb-3 w-fit mx-auto md:mx-0 rounded-full flex items-center gap-1 p-2"
       >
         <span className="w-1.5 h-1.5 block rounded-full dot"></span>
-        <span className="text-[13px]  relative font-bold bg-linear-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent ">
+        <span className="text-[13px] capitalize relative font-bold bg-linear-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent ">
           {text}
         </span>
       </motion.p>

@@ -48,15 +48,16 @@ const Landing = () => {
                 <MdDownload size={20} />
                 Download
               </motion.button>
-              <motion.button
+              <motion.a
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.4 }}
                 className=" flex items-center gap-1 text-[15px]  cursor-pointer rounded-md p-2 secondary-btn"
+                href="#feature"
               >
                 <FaRegEye size={18} />
                 Explore Feature
-              </motion.button>
+              </motion.a>
             </div>
             <div className="flex gap-1 items-center mt-4">
               <motion.p

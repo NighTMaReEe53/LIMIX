@@ -11,6 +11,7 @@ import { FiAward, FiUsers } from "react-icons/fi";
 import Bubbles from "../../public/json/Bubbles.json";
 import { IoIosArrowDropdown } from "react-icons/io";
 import Water from "../../public/json/water.json";
+import Review from "../Components/Review";
 
 const About = () => {
   return (
@@ -123,8 +124,21 @@ const About = () => {
               animationData={Bubbles}
               className="absolute top-0 right-0 w-40 h-40 opacity-45"
             />
-
-            <div className="order-2 md:order-0">
+            <div className="relative shadow-(--shadow) p-3 border-(--borderColor) border-2 rounded-md box-hover">
+              <motion.div
+                initial={{ opacity: 0, x: 10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                className="relative image-shadow"
+              >
+                <img
+                  src="about.jpg"
+                  className="w-full h-full rounded-md transition "
+                  alt=""
+                />
+              </motion.div>
+            </div>
+            <div className="text">
               <motion.p
                 initial={{ y: -10, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -179,20 +193,6 @@ const About = () => {
                   fish health and growth.
                 </motion.li>
               </ul>
-            </div>
-            <div className="relative shadow-(--shadow) p-3 border-(--borderColor) border-2 rounded-md box-hover">
-              <motion.div
-                initial={{ opacity: 0, x: 10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1 }}
-                className="relative image-shadow"
-              >
-                <img
-                  src="about.jpg"
-                  className="w-full h-full rounded-md transition "
-                  alt=""
-                />
-              </motion.div>
             </div>
           </div>
           <div className="core py-14 relative">
@@ -329,6 +329,9 @@ const About = () => {
               </motion.div>
             </div>
           </div>
+        </div>
+        <Review />
+        <div className="container mx-auto px-3 lg:px-30">
           <div className="team py-14 relative">
             <Lottie
               animationData={Water}
