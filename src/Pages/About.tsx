@@ -332,7 +332,11 @@ const About = () => {
           <div className="team py-14 relative">
             <Lottie
               animationData={Water}
-              className="absolute top-0 right-0 w-50 h-50 opacity-45 -z-20"
+              className="absolute top-0 right-0 w-40 h-40 opacity-45 -z-20"
+            />
+            <Lottie
+              animationData={Bubbles}
+              className="absolute top-0 left-0 w-50 h-50 opacity-45 -z-20"
             />
             <Lottie
               animationData={Water}
@@ -349,11 +353,13 @@ const About = () => {
               transition={{ duration: 1 }}
               className="image  lg:w-187.5 lg:h-120 shadow-(--shadow) p-3 border-(--borderColor) border-2 rounded-md box-hover mx-auto flex"
             >
-              <img
-                src="team.jpg"
-                className="w-full object-cover h-full rounded-md"
-                alt=""
-              />
+              <div className="image-team relative before:absolute before:w-full before:h-full w-full before:rounded-md before:transition before:top-0 before:left-0  ">
+                <img
+                  src="team.jpg"
+                  className="w-full object-cover h-full rounded-md pointer-events-none transition"
+                  alt=""
+                />
+              </div>
             </motion.div>
           </div>
         </div>

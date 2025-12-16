@@ -87,11 +87,29 @@ footer {
   height: calc(100vh - 72px);
 }
 
+.image-team {
+  overflow: hidden;
+  &:hover {
+    img {
+      scale: 1.2;
+      rotate: 5deg;
+    }
+    &::before {
+      opacity: 0;
+      backdrop-filter: blur(0px);
+    }
+  }
+  &::before {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+  }
+}
+
 .image-shadow {
   transition: 0.3s ease;
   overflow: hidden;
   border-radius: 10px;
-  
+
   &:hover {
     img {
       scale: 1.2;
