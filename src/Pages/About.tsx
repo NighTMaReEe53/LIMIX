@@ -238,7 +238,7 @@ const About = () => {
                 transition={{ delay: 0.2 }}
                 className="box shadow-(--shadow) p-3  rounded-md box-hover bg-linear-to-r from-rose-400 via-rose-500 to-rose-600"
               >
-                <div className="icon w-15 h-15  border-2 border-stone-300 mb-2 flex items-center justify-center text-stone-300 rounded-md">
+                <div className="icon w-15 h-15  border-2 border-white mb-2 flex items-center justify-center text-white rounded-md">
                   <BiWorld size={35} />
                 </div>
                 <div className="text">
@@ -276,7 +276,7 @@ const About = () => {
                 transition={{ delay: 0.6 }}
                 className="box shadow-(--shadow) p-3 bg-linear-to-r from-orange-400 via-orange-500 to-orange-600 rounded-md"
               >
-                <div className="icon w-15 h-15 bg-linear-to-r  mb-2 flex items-center justify-center text-stone-300 border-2 border-stone-300 rounded-md">
+                <div className="icon w-15 h-15 bg-linear-to-r  mb-2 flex items-center justify-center text-white border-2 border-white rounded-md">
                   <FiAward size={35} />
                 </div>
                 <div className="text">
@@ -314,7 +314,7 @@ const About = () => {
                 transition={{ delay: 1 }}
                 className="box shadow-(--shadow) p-3 bg-linear-to-r from-cyan-400 via-cyan-500 to-cyan-500 rounded-md "
               >
-                <div className="icon w-15 h-15 bg-linear-to-r  border-2 border-stone-300 mb-2 flex items-center justify-center text-stone-300 rounded-md">
+                <div className="icon w-15 h-15 bg-linear-to-r  border-2 border-white mb-2 flex items-center justify-center text-white rounded-md">
                   <FaBullseye size={35} />
                 </div>
                 <div className="text">
