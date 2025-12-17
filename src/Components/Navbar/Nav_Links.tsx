@@ -55,7 +55,7 @@ const Nav_Links = ({ show }: IShow) => {
       <li>
         <Link
           onClick={() => setActive("product")}
-          to={"/"}
+          to={"/product"}
           className={` text-[35px]  lg:text-[17px] relative  font-medium flex items-center gap-1 
           before:w-1.75 before:h-1.75 ${
             active == "product" ? "opacity-100" : "opacity-50"

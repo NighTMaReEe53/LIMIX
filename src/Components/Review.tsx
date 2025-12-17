@@ -50,7 +50,7 @@ const Review = () => {
                 />
               </div>
               <div className="text">
-                <h2 className="text-transparent bg-linear-to-r animate-gradient from-black via-blue-500 to-black bg-clip-text font-bold text-lg">
+                <h2 className="text-transparent bg-linear-to-r animate-gradient from-black via-white to-black bg-clip-text font-bold text-lg">
                   Mohamed Ali
                 </h2>
                 <span className="text-white text-[15px]">CEO & Founder</span>

@@ -8,7 +8,7 @@ import { motion } from "motion/react";
 
 const Choose = () => {
   return (
-    <section className="py-14 relative">
+    <section className="py-14 relative" id="choose">
       <Lottie
         animationData={Bubbles}
         className="absolute top-0 left-0 w-40 h-40 opacity-45"

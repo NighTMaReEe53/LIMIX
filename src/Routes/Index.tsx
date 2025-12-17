@@ -9,6 +9,7 @@ import Layout from "./Layout";
 import Contact from "../Pages/Contact";
 import Blog from "../Pages/Blog";
 import Download from "../Pages/Download";
+import Product from "../Pages/Product";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,7 @@ export const router = createBrowserRouter(
         <Route path="contact" element={<Contact />} />
         <Route path="blog" element={<Blog />} />
         <Route path="download" element={<Download />} />
+        <Route path="product" element={<Product />} />
       </Route>
     </>
   )

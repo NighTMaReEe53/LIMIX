@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { GrBlog } from "react-icons/gr";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
-import { MdOutlineAlternateEmail } from "react-icons/md";
+import { MdOutlineAlternateEmail, MdOutlineDownload } from "react-icons/md";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { Link } from "react-router";
 
@@ -75,12 +75,22 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to={"/"}
+                  to={"/product"}
                   className="flex items-center gap-2 text-[#f1f5f9]"
                 >
                   <AiOutlineProduct size={20} className="text-blue-500" />
                   <IoIosArrowForward size={17} />
                   Product
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/download"}
+                  className="flex items-center gap-2 text-[#f1f5f9]"
+                >
+                  <GrBlog size={20} className="text-blue-500" />
+                  <MdOutlineDownload size={17} />
+                  Download
                 </Link>
               </li>
               <li>
