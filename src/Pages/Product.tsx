@@ -290,7 +290,7 @@ const Product = () => {
             >
               <span className="w-1.5 h-1.5 block rounded-full dot"></span>
               <span className="text-[13px]  relative font-bold bg-linear-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent ">
-                First Limix Product
+                Second Limix Product
               </span>
             </motion.p>
             <motion.h2
