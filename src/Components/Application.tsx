@@ -94,6 +94,9 @@ const Application = () => {
             <div className="btns flex flex-col md:flex-row  items-center justify-center lg:justify-start gap-1 mb-2">
               <Link
                 to={"/download"}
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className="flex items-center gap-1 text-[15px] w-full justify-center text-[#f2f2f2] cursor-pointer rounded-md p-2  main-btn"
               >
                 <MdDownload size={20} />
@@ -101,6 +104,9 @@ const Application = () => {
               </Link>
               <Link
                 to={"/download"}
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className=" flex items-center gap-1 text-[15px] w-full justify-center  cursor-pointer rounded-md p-2 secondary-btn"
               >
                 <FaRegEye size={18} />

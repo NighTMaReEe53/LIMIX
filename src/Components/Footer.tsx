@@ -57,7 +57,13 @@ const Footer = () => {
             </h2>
             <ul className="flex flex-col gap-3">
               <li className="">
-                <Link to={"/"} className="flex items-center gap-2 text-white">
+                <Link
+                  to={"/"}
+                  className="flex items-center gap-2 text-white"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   <IoHomeOutline size={20} className="text-blue-500" />
                   <IoIosArrowForward size={17} />
                   Home
@@ -67,6 +73,9 @@ const Footer = () => {
                 <Link
                   to={"/about"}
                   className="flex items-center gap-2 text-[#f1f5f9]"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                 >
                   <CiUser size={20} className="text-blue-500" />
                   <IoIosArrowForward size={17} />
@@ -77,6 +86,9 @@ const Footer = () => {
                 <Link
                   to={"/product"}
                   className="flex items-center gap-2 text-[#f1f5f9]"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                 >
                   <AiOutlineProduct size={20} className="text-blue-500" />
                   <IoIosArrowForward size={17} />
@@ -87,6 +99,9 @@ const Footer = () => {
                 <Link
                   to={"/download"}
                   className="flex items-center gap-2 text-[#f1f5f9]"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                 >
                   <MdOutlineDownload size={20} className="text-blue-500" />
                   <IoIosArrowForward size={17} />
@@ -97,6 +112,9 @@ const Footer = () => {
                 <Link
                   to={"/blog"}
                   className="flex items-center gap-2 text-[#f1f5f9]"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                 >
                   <GrBlog size={20} className="text-blue-500" />
                   <IoIosArrowForward size={17} />
@@ -107,6 +125,9 @@ const Footer = () => {
                 <Link
                   to={"/contact"}
                   className="flex items-center gap-2 text-[#f1f5f9]"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                 >
                   <CiPhone size={20} className="text-blue-500" />
                   <IoIosArrowForward size={17} />
